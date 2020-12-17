@@ -1,0 +1,48 @@
+<doctor-surgery [isDoctorCreated]="isDoctorCreated" ></doctor-surgery>
+<div *ngIf="isDoctorCreated" class="container">
+
+  <div class="card-div">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Paciente</mat-card-title>
+        <mat-card-subtitle>Registro</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>NSS </mat-label>
+          <input type="email" matInput placeholder="NSS" value="">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Nombre</mat-label>
+          <textarea matInput placeholder="Nombre"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Apellido Paterno</mat-label>
+          <textarea matInput placeholder="Ap. Paterno"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Apellido Materno</mat-label>
+          <textarea matInput placeholder="Ap. Materno"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Dirección</mat-label>
+          <textarea matInput placeholder="Dirección"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Doctor</mat-label>
+        </mat-form-field>
+
+        <button class="btn-mat-class" mat-raised-button color="primary">Registrar Paciente</button>
+
+      </mat-card-content>
+
+    </mat-card>
+  </div>
+</div>
